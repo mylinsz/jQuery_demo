@@ -12,3 +12,5 @@ $(function(){
 
 
 alert($ === jQuery); //相等 恒等
+
+alert($);
