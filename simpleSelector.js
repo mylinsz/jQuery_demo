@@ -35,13 +35,16 @@ $(function () {
 	  $('#pox').css('color', 'green');
   }
   
-  */
-  
   //通过数组下标获取DOM对象 ：$('#box').get(0) 和 $('#box')[0]
   if($('#box')[0]){
 	  //$('#box').get(0).css('color', 'green'); //这种写法不可以
 	  //$('#box').eq(0).css('color', 'green'); //这种写法可以
 	  $('#box').css('color', 'green');
   }
+  
+  alert($('#box')[0]); //box存在返回：[object HTMLDivElement]
+  alert($('#pox')[0]); //pox不存在返回：undefined
+  
+  */
   
 });

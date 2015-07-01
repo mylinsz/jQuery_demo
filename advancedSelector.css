@@ -1,0 +1,27 @@
+﻿
+/*
+div{
+	color : red;
+}
+p{
+	color : red;
+}
+strong{
+	color : red;
+}
+
+群组选择器：
+当上面所设置的内容都一样的时候我们可以使用【群组选择器】，即：
+div, p, strong{ 
+	color : red;
+}
+元素标签名之间必须用逗号隔开
+
+后代选择器：
+ul li a{
+	color : red;
+}
+
+*/
+
+
