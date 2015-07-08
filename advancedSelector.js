@@ -3,8 +3,12 @@
 $(function () {
 	/*
 	$('div, p, strong').css('color', 'green');
+	$('ul li a').css('color', 'orange');
+	$('*').css('color', 'red');
+	alert($('*').size());
   */
   
-  $('ul li a').css('color', 'orange');
+  alert($('*')[0].nodeName);
+  alert($('*')[1].nodeName);
   
 });
