@@ -36,10 +36,36 @@ $(function(){
 	for(var i in box){
 		alert(i + ':' + box[i]);
 	}
-	*/
-	
+
 	var box = $('div').css(['color', 'height', 'width']);
 	for(var i in box){
 		alert(i + ':' + box[i]); //打印的东西看不懂？？？
 	}
+	*/
+	
+	// var box = $('div').css(['color', 'height', 'width']);
+	// alert(box); //对象数组 [object Object]
+	// for(var i in box){
+	// 	alert(i + ':' + box[i]);
+	// }
+	// $.each(box, function(attr, value){
+	// 	alert(attr + ':' + value);
+	// });
+
+	// alert($('div')[0]);
+	// alert($('div')[1]);
+
+	// $('div').each(function(index, element){
+	// 	alert(index + ':' + element);
+	// });
+	
+	// $('div').css({
+	// 	'color' : 'red'
+	// });
+
+	$('div').css('width', function(index, value){
+		// alert(value); //1424
+		return parseInt(value)-500 + 'px';
+	});
+
 });
